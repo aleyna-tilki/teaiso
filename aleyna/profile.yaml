@@ -4,7 +4,7 @@ codename: testing
 publisher: Aleyna Tilki <https://debian.org>
 label: ALEYNA_TILKI_LINUX
 application_id: Debian Linux Live/Rescue Media
-airootfs_directory: airootfs
+airootfs_directory_pre: airootfs
 #iso_merge: iso_merge
 grub_cfg: grub.cfg
 packages:
