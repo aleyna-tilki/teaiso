@@ -10,4 +10,6 @@ pavucontrol
 pulseaudio
 ca-certificates
 chromium
+xfce4-terminal
+xdg-user-dirs
 --no-install-recommends
