@@ -1,0 +1,16 @@
+name: aleyna
+distro: debian
+codename: testing
+publisher: Aleyna Tilki <https://debian.org>
+label: ALEYNA_TILKI_LINUX
+application_id: Debian Linux Live/Rescue Media
+airootfs_directory: airootfs
+#iso_merge: iso_merge
+grub_cfg: grub.cfg
+packages:
+ - packages.x86_64
+ - firmware.x86_64
+file_permissions:
+ - /etc/shadow|0:0:400
+customize_airootfs:
+ - customize-airootfs.sh
