@@ -2,7 +2,9 @@ grub-pc-bin
 grub-efi
 linux-image-amd64
 xfce4
-xfce4-goodies
+xserver-xorg
+lightdm
+lightdm-gtk-greeter
 xinit
 pavucontrol
 pulseaudio
