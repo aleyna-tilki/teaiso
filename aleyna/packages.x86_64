@@ -13,6 +13,7 @@ chromium
 xfce4-terminal
 xdg-user-dirs
 file-roller
+mousepad
 p7zip-full
 xfce4-whiskermenu-plugin
 --no-install-recommends
