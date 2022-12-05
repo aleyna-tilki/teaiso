@@ -12,4 +12,7 @@ ca-certificates
 chromium
 xfce4-terminal
 xdg-user-dirs
+file-roller
+p7zip-full
+xfce4-whiskermenu-plugin
 --no-install-recommends
