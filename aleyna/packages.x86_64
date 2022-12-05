@@ -8,5 +8,6 @@ lightdm-gtk-greeter
 xinit
 pavucontrol
 pulseaudio
+ca-certificates
 chromium
 --no-install-recommends
