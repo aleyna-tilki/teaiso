@@ -1,6 +1,7 @@
 grub-pc-bin
 grub-efi
 linux-image-amd64
+gnome-themes-extra
 xfce4
 xserver-xorg
 lightdm
