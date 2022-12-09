@@ -5,7 +5,7 @@ cd /tmp
 apt install wget
 wget https://github.com/aleyna-tilki/base-files/releases/download/current/base-files_9999-noupdate_amd64.deb
 wget https://github.com/The-Aleyna-Tilki-Linux/17g-installer/releases/download/current/17g-installer_1.0_all.deb
-wget https://github.com/aleyna-tilki/aleyna-theme/releases/download/ffff/aleyna-theme.deb
+wget https://github.com/aleyna-tilki/aleyna-theme/releases/download/current/aleyna-theme.deb
 apt install ./*.deb -yq --allow-downgrades
 
 #### Disable recommends by default
