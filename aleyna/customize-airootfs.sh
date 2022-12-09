@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 cd /tmp
 
-### Instally 17g
+### Instally 17g and other stuff
 apt install wget
+wget https://github.com/aleyna-tilki/base-files/releases/download/current/base-files_9999-noupdate_amd64.deb
 wget https://github.com/The-Aleyna-Tilki-Linux/17g-installer/releases/download/current/17g-installer_1.0_all.deb
+
 apt install ./*.deb -yq --allow-downgrades
 
 #### Disable recommends by default
