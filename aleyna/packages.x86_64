@@ -18,5 +18,6 @@ mousepad
 p7zip-full
 network-manager-gnome
 network-manager
+wpasupplicant
 xfce4-whiskermenu-plugin
 --no-install-recommends
