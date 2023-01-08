@@ -20,4 +20,5 @@ network-manager-gnome
 network-manager
 wpasupplicant
 xfce4-whiskermenu-plugin
+sudo
 --no-install-recommends
