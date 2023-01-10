@@ -1,5 +1,6 @@
 grub-pc-bin
 grub-efi
+efibootmgr
 linux-image-amd64
 gnome-themes-extra
 xfce4
