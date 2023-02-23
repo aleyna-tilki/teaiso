@@ -1,2 +1,2 @@
-deb https://pkgmaster.devuan.org/merged testing main contrib non-free
-deb https://pkgmaster.devuan.org/merged stable main contrib non-free
+deb https://pkgmaster.devuan.org/merged testing main contrib non-free non-free-firmware
+deb https://pkgmaster.devuan.org/merged stable main contrib non-free non-free-firmware
