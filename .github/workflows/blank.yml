@@ -19,6 +19,7 @@ jobs:
                 image: debian:testing
                 options: -v ${{ github.workspace }}:/root -v /output:/output
                 run: |
+                    cd /root
                     bash build.sh
 
           - uses: "marvinpinto/action-automatic-releases@latest"
