@@ -7,22 +7,27 @@ on:
     - cron: "0 0 * * 6"
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    compile:
+        name: Teaiso
+        runs-on: ubuntu-latest
+        steps:
+          - name: Check out the repo
+            uses: actions/checkout@v2
+          - name: Run the build process with Docker
+            uses: addnab/docker-run-action@v3
+            with:
+                image: debian:testing
+                options: -v ${{ github.workspace }}:/root -v /output:/output
+                run: |
+                    bash build.sh
 
-    steps:
-      - uses: actions/checkout@v2
-      - name: build
-        run: |
-          sudo bash build.sh
+          - uses: "marvinpinto/action-automatic-releases@latest"
+            with:
+                repo_token: "${{ secrets.GITHUB_TOKEN }}"
+                automatic_release_tag: "current"
+                prerelease: false
+                title: "Latest release"
+                files: |
+                  /output/*
 
-
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: false
-          title: "Auto build"
-          files: |
-            /output/*
 
