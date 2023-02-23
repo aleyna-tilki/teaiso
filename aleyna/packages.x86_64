@@ -1,5 +1,8 @@
 grub-pc-bin
-grub-efi
+grub-efi-amd64-bin
+grub2-common
+grub-common
+grub-efi-ia32-bin
 efibootmgr
 linux-image-amd64
 gnome-themes-extra
