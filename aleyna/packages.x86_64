@@ -26,4 +26,5 @@ blueman
 wpasupplicant
 xfce4-whiskermenu-plugin
 sudo
+rsync
 --no-install-recommends
