@@ -12,7 +12,7 @@ lightdm
 lightdm-gtk-greeter
 xinit
 pavucontrol
-pulseaudio
+pipewire
 ca-certificates
 chromium
 xfce4-terminal
