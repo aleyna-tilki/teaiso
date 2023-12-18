@@ -13,7 +13,9 @@ lightdm-gtk-greeter
 xinit
 pavucontrol
 # devuan pipewire broken
-pulseaudio
+pipewire
+wireplumber
+pipewire-pulse
 ca-certificates
 chromium
 xfce4-terminal
