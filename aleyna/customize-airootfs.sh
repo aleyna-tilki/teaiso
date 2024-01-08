@@ -10,6 +10,10 @@ wget https://github.com/aleyna-tilki/aleyna-theme/releases/download/current/aley
 wget https://github.com/aleyna-tilki/pipewire-launcher/releases/download/current/pipewire-launcher_1.0.0_all.deb
 apt install ./*.deb -yq --allow-downgrades
 
+#### fix eudev sed bug about usrmerge shit
+# install busybox into /bin as symlink
+/bin/busybox --install -s /bin
+
 #### Disable recommends by default
 cat > /etc/apt/apt.conf.d/01norecommend << EOF
 APT::Install-Recommends "0";
