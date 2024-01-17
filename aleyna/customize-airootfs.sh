@@ -2,17 +2,17 @@
 cd /tmp
 
 ### Instally 17g and other stuff
-apt install wget -yq
+yes | apt install wget -yq
 wget https://github.com/aleyna-tilki/base-files/releases/download/current/base-files_9999-noupdate_amd64.deb
 wget https://github.com/aleyna-tilki/17g-installer/releases/download/current/17g-installer_1.0_all.deb
 wget https://github.com/pardus-nosystemd/desktop-base/releases/download/current/desktop-base_9999-noupdate_all.deb
 wget https://github.com/aleyna-tilki/aleyna-theme/releases/download/current/aleyna-theme.deb
 wget https://github.com/aleyna-tilki/pipewire-launcher/releases/download/current/pipewire-launcher_1.0.0_all.deb
-apt install ./*.deb -yq --allow-downgrades
+yes | apt install ./*.deb -yq --allow-downgrades
 
 #### fix eudev sed bug about usrmerge shit
 # install busybox into /bin as symlink
-apt install kmod busybox-static -yq 
+yes | apt install kmod busybox-static -yq 
 $(which busybox) --install -s /bin
 ln -s /usr/bin/kmod /sbin/modprobe
 
