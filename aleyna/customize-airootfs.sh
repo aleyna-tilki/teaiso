@@ -14,6 +14,7 @@ apt install ./*.deb -yq --allow-downgrades
 # install busybox into /bin as symlink
 apt install busybox-static -yq 
 $(which busybox) --install -s /bin
+ln -s /usr/bin/kmod /sbin/modprobe
 
 #### Disable recommends by default
 cat > /etc/apt/apt.conf.d/01norecommend << EOF
