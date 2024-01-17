@@ -4,6 +4,7 @@ grub2-common
 grub-common
 grub-efi-ia32-bin
 efibootmgr
+kmod
 linux-image-amd64
 gnome-themes-extra
 xfce4
