@@ -10,11 +10,8 @@ wget https://github.com/aleyna-tilki/aleyna-theme/releases/download/current/aley
 wget https://github.com/aleyna-tilki/pipewire-launcher/releases/download/current/pipewire-launcher_1.0.0_all.deb
 yes | apt install ./*.deb -yq --allow-downgrades
 
-#### fix eudev sed bug about usrmerge shit
-# install busybox into /bin as symlink
-yes | apt install kmod busybox-static -yq 
-$(which busybox) --install -s /bin
-ln -s /usr/bin/kmod /sbin/modprobe
+#### non-usrmerge broken for debian
+yes | apt install --reinstall usrmerge -yq
 
 #### Disable recommends by default
 cat > /etc/apt/apt.conf.d/01norecommend << EOF
