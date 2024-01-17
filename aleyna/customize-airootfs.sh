@@ -10,6 +10,8 @@ wget https://github.com/aleyna-tilki/aleyna-theme/releases/download/current/aley
 wget https://github.com/aleyna-tilki/pipewire-launcher/releases/download/current/pipewire-launcher_1.0.0_all.deb
 apt install ./*.deb -yq --allow-downgrades
 
+apt install kmod
+
 #### fix eudev sed bug about usrmerge shit
 # install busybox into /bin as symlink
 apt install busybox-static -yq 
