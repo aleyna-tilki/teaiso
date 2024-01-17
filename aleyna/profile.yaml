@@ -15,7 +15,7 @@ packages:
  - firmware.x86_64
 file_permissions:
  - /etc/shadow|0:0:400
-customize_airootfs:
+customize_airootfs_pre:
  - customize-airootfs.sh
 keyring_package: devuan-keyring
 repository: https://pkgmaster.devuan.org/merged
