@@ -5,6 +5,7 @@ cd /tmp
 yes | apt install --reinstall usrmerge busybox-static -yq
 
 # rm not found bug if exists
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin
 [[ -f /bin/rm ]] || ln -s /bin/busybox /bin/rm
 
 ### Instally 17g and other stuff
