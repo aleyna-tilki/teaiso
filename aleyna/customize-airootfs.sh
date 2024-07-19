@@ -4,10 +4,6 @@ cd /tmp
 #### non-usrmerge broken for debian
 yes | apt install --reinstall usrmerge busybox-static -yq
 
-# rm not found bug if exists
-export PATH=/sbin:/bin:/usr/sbin:/usr/bin
-[[ -f /bin/rm ]] || ln -s /bin/busybox /bin/rm
-
 ### Instally 17g and other stuff
 yes | apt install wget -yq
 wget https://github.com/aleyna-tilki/base-files/releases/download/current/base-files_9999-noupdate_amd64.deb
