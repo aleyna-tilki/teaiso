@@ -10,6 +10,7 @@ gnome-themes-extra
 xfce4
 xserver-xorg
 lightdm
+light-locker
 lightdm-gtk-greeter
 xinit
 pavucontrol
