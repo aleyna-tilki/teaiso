@@ -13,6 +13,12 @@ wget https://github.com/aleyna-tilki/aleyna-theme/releases/download/current/aley
 wget https://github.com/aleyna-tilki/pipewire-launcher/releases/download/current/pipewire-launcher_1.0.0_all.deb
 yes | apt install ./*.deb -yq --allow-downgrades
 
+### hardened stuff
+mkdir -p /etc/sysctl.d/
+wget https://gitlab.com/turkman/devel/sources/base-files/-/raw/master/rootfs/etc/sysctl.d/990-security.conf -O /etc/sysctl.d/990-security.conf
+echo "b08dfa6083e7567a1921a715000001fb" > /etc/machine-id
+
+
 #### Disable recommends by default
 cat > /etc/apt/apt.conf.d/01norecommend << EOF
 APT::Install-Recommends "0";
