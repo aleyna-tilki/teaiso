@@ -17,7 +17,17 @@ yes | apt install ./*.deb -yq --allow-downgrades
 mkdir -p /etc/sysctl.d/
 wget https://gitlab.com/turkman/devel/sources/base-files/-/raw/master/rootfs/etc/sysctl.d/990-security.conf -O /etc/sysctl.d/990-security.conf
 echo "b08dfa6083e7567a1921a715000001fb" > /etc/machine-id
+## network manager settings
+mkdir -p /etc/NetworkManager/conf.d/
+cat > /etc/NetworkManager/conf.d/31-privacy.conf <<EOF
+[device-mac-randomization]
+wifi.scan-rand-mac-address=yes
 
+[connection-mac-randomization]
+ethernet.cloned-mac-address=random
+wifi.cloned-mac-address=random
+
+EOF
 
 #### Disable recommends by default
 cat > /etc/apt/apt.conf.d/01norecommend << EOF
