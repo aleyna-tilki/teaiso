@@ -7,7 +7,7 @@ publisher: Aleyna Tilki <https://github.com/The-Aleyna-Tilki-Linux/>
 label: ALEYNA_TILKI_LINUX
 application_id: Aleyna Tilki Linux
 airootfs_directory_pre: airootfs
-linux_args: locales=tr_TR.UTF-8,en_US.UTF-8 keyboard-layouts=tr username=aleyna hostname=tilki user-fullname=aleyna noswap quiet console=tty31
+linux_args: locales=tr_TR.UTF-8,en_US.UTF-8 keyboard-layouts=us,tr username=aleyna hostname=tilki user-fullname="Aleyna Tilki" noswap quiet console=tty31
 #iso_merge: iso_merge
 grub_cfg: grub.cfg
 packages:

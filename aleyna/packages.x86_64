@@ -3,6 +3,7 @@ grub-efi-amd64-bin
 grub2-common
 grub-common
 grub-efi-ia32-bin
+e2fsprogs
 efibootmgr
 kmod
 linux-image-amd64
