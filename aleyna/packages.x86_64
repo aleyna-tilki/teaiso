@@ -23,10 +23,9 @@ ca-certificates
 chromium
 xfce4-terminal
 xdg-user-dirs
-xarchiver
 mousepad
 ristretto
-gnome-screenshot
+xfce4-screenshooter
 network-manager-gnome
 network-manager
 blueman
