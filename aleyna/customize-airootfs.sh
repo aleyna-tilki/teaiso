@@ -18,7 +18,7 @@ mkdir -p /etc/sysctl.d/
 wget https://gitlab.com/turkman/devel/sources/base-files/-/raw/master/rootfs/etc/sysctl.d/990-security.conf -O /etc/sysctl.d/990-security.conf
 echo "b08dfa6083e7567a1921a715000001fb" > /etc/machine-id
 ### module blacklists
-for list in wei pmt webcam wmi ; do
+for list in mei pmt webcam wmi ; do
     wget https://gitlab.com/turkman/devel/sources/base-files/-/raw/master/rootfs/etc/modprobe.d/${list}.conf -O /etc/modprobe.d/${list}.conf
 done
 ## network manager settings
