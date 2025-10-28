@@ -15,7 +15,7 @@ light-locker
 lightdm-gtk-greeter
 xinit
 pavucontrol
-# devuan pipewire broken
+pipewire-audio
 pipewire
 wireplumber
 pipewire-pulse
@@ -28,7 +28,6 @@ ristretto
 xfce4-screenshooter
 network-manager-gnome
 network-manager
-blueman
 wpasupplicant
 xfce4-whiskermenu-plugin
 sudo
