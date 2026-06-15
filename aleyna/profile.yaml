@@ -17,5 +17,4 @@ file_permissions:
  - /etc/shadow|0:0:400
 customize_airootfs_pre:
  - customize-airootfs.sh
-keyring_package: devuan-keyring
-repository: https://pkgmaster.devuan.org/merged
+ - debian-nosystemd.sh
