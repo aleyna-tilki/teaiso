@@ -26,7 +26,7 @@ xdg-user-dirs
 mousepad
 ristretto
 xfce4-screenshooter
-network-manager-gnome
+#network-manager-gnome
 network-manager
 wpasupplicant
 xfce4-whiskermenu-plugin
