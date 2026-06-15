@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 cd /tmp
 
-#### non-usrmerge broken for debian
-yes | apt install --reinstall usrmerge  -yq
-
 ### Instally 17g and other stuff
 yes | apt install wget -yq
 wget https://github.com/aleyna-tilki/base-files/releases/download/current/base-files_9999-noupdate_amd64.deb
