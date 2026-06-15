@@ -2,6 +2,7 @@
 cd /tmp
 
 ### Instally 17g and other stuff
+apt update
 yes | apt install wget -yq
 wget https://github.com/aleyna-tilki/base-files/releases/download/current/base-files_9999-noupdate_amd64.deb
 wget https://github.com/aleyna-tilki/17g-installer/releases/download/current/17g-installer_1.0_all.deb
