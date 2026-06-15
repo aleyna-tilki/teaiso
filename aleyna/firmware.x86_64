@@ -12,7 +12,7 @@ firmware-brcm80211
 firmware-amd-graphics
 firmware-cavium
 firmware-intel-sound
-firmware-misc-nonfree
+# firmware-misc-nonfree
 firmware-myricom
 firmware-qlogic
 firmware-samsung
